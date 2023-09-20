@@ -12,14 +12,32 @@ export const Footer = () => {
         <h2 className="h4 mb-4">{t('footer.aboutUs')}</h2>
         <div className="max-w-4xl">{t('footer.description')}</div>
         <div className="mt-8">
-          {t('footer.powerBy')}{' '}
           <Link
-            href="https://www.contentful.com"
+            href="https://curiosource.com"
             rel="noopener noreferrer"
             target="_blank"
             className="text-blue500"
           >
-            Contentful
+            curiosource HP
+          </Link>
+        </div>
+        <div className="mt-8">
+          <Link
+            href="https://curiosource.com/privacypolicy"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-blue500"
+          >
+            Privacy Policy
+          </Link>
+          and
+          <Link
+            href="https://curiosource.com/termsandconditions"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-blue500"
+          >
+            Terms and Conditions
           </Link>
         </div>
       </Container>
