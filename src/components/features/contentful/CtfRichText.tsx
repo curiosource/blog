@@ -1,5 +1,7 @@
 import { documentToReactComponents, Options } from '@contentful/rich-text-react-renderer';
-import { BLOCKS, Document } from '@contentful/rich-text-types';
+import { BLOCKS, Document, MARKS } from '@contentful/rich-text-types';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneLight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import { ArticleImage } from '@src/components/features/article';
 import { ComponentRichImage } from '@src/lib/__generated/sdk';
@@ -36,6 +38,25 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
       if (!entry) return null;
 
       return <EmbeddedEntry {...entry} />;
+    },
+    [BLOCKS.PARAGRAPH]: (node, children) => {
+      if (
+        node.content.length === 1
+        //&&
+        //node.content[0].marks.find((x) => x.type === "code")
+      ) {
+        return <div>{children}</div>;
+      }
+      return <p>{children}</p>;
+    },
+  },
+  renderMark: {
+    [MARKS.CODE]: text => {
+      return (
+        <SyntaxHighlighter language="javascript" style={atomOneLight} showLineNumbers>
+          {text}
+        </SyntaxHighlighter>
+      );
     },
   },
 });
