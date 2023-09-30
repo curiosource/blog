@@ -5,7 +5,6 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 import { ArticleImage } from '@src/components/features/article';
 import { ComponentRichImage } from '@src/lib/__generated/sdk';
-import { Mark, Text } from '@contentful/rich-text-types/dist/types/types';
 
 export type EmbeddedEntryType = ComponentRichImage | null;
 
