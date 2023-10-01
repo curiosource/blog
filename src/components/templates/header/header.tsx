@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import BlogLogo from '@icons/blog-logo.svg';
 import { LanguageSelector } from '@src/components/features/language-selector';
-import GoogleAdsense from '@src/components/shared/adsence';
+import GoogleAdsense from '@src/components/shared/Adsence';
 import { Container } from '@src/components/shared/container';
 import GoogleAnalytics from '@src/components/shared/GoogleAnalytics';
 
