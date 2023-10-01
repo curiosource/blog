@@ -1,7 +1,7 @@
 'use client';
 import Script from 'next/script';
 
-const GoogleAdsense = () => {
+const Adsense = () => {
   return (
     <>
       <Script
@@ -13,4 +13,4 @@ const GoogleAdsense = () => {
   );
 };
 
-export default GoogleAdsense;
+export default Adsense;
