@@ -14,7 +14,7 @@ export const Header = () => {
     <header className="py-5">
       <GoogleAnalytics />
       <meta name="google-adsense-account" content={`${process.env.NEXT_PUBLIC_AD_ID}`} />
-      <Adsense />
+      
       <nav>
         <Container className="flex items-center justify-between">
           <Link href="/" title={t('common.homepage')}>
