@@ -13,6 +13,8 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="google-adsense-account" content={`${process.env.NEXT_PUBLIC_AD_ID}`} />
+        <meta name="google-site-verification" content={`${process.env.NEXT_PUBLIC_SC_ID}`} />
       </Head>
       <body>
         <Main />
