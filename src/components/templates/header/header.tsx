@@ -14,6 +14,7 @@ export const Header = () => {
     <header className="py-5">
       <GoogleAnalytics />
       <meta name="google-adsense-account" content={`${process.env.NEXT_PUBLIC_AD_ID}`} />
+      <meta name="google-site-verification" content={`${process.env.NEXT_PUBLIC_SC_ID}`}  />
       
       <nav>
         <Container className="flex items-center justify-between">
