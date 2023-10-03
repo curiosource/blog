@@ -15,7 +15,7 @@ export const CtfImage = ({ url, width, height, title, nextImageProps }: ImagePro
 
   return (
     <NextImage
-      src={url}
+      src={url.toString() + '?fm=webp'}
       width={width}
       height={height}
       alt={title || ''}
