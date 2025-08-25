@@ -15,6 +15,8 @@ export default function Document() {
         <meta name="theme-color" content="#ffffff" />
         <meta name="google-adsense-account" content={`${process.env.NEXT_PUBLIC_AD_ID}`} />
         <meta name="google-site-verification" content={`${process.env.NEXT_PUBLIC_SC_ID}`} />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2777848943755249"
+     crossorigin="anonymous"></script>
       </Head>
       <body>
         <Main />
